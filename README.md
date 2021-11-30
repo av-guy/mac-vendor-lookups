@@ -10,5 +10,6 @@ an error -- run the script from PowerShell or the command line instead.
 1. `` git clone https://github.com/av-guy/mac-vendor-lookups.git ``
 2. `` cd mac-vendor-lookups ``
 3. `` virtualenv venv ``
-4. `` pip install -r requirements.txt ``
-5. `` python main.py ``
+4. `` cd venv/Scripts/activate ``
+5. `` pip install -r requirements.txt ``
+6. `` python main.py ``
