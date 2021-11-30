@@ -11,11 +11,10 @@ def show_mac_vendor(s, r):
     try:
         vendor = mac_lookup.lookup(mac.upper())
     except KeyError as e:
-        print(e)
         pass
     return f'{vendor} - {mac} - {ip}'
         
 
 if __name__ == "__main__":
-    answers, _ = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=subnet), timeout=2)
+    answers, _ = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=subnet), timeout=2, verbose=False)
     answers.summary(lambda s, r: show_mac_vendor(s, r))

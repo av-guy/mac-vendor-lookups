@@ -1,7 +1,7 @@
 # MAC Vendor Lookup
 
 This script performs an ARP request and does a vendor lookup for each MAC address in the ARP table.
-Windows users **MUST** have [Npcap](https://nmap.org/npcap/) or [Winpcap](https://www.winpcap.org/) installed
+Windows users **MUST** have [Nmap](https://nmap.org/npcap/) or [Winpcap](https://www.winpcap.org/) installed
 for this to work. Tested using Python 3.10 on Windows 10. Running this script inside of IDLE will produce
 an error -- run the script from PowerShell or the command line instead.
 
