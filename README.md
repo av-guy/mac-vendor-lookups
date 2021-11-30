@@ -13,3 +13,8 @@ an error -- run the script from PowerShell or the command line instead.
 4. `` cd venv/Scripts/activate ``
 5. `` pip install -r requirements.txt ``
 6. `` python main.py ``
+
+### Please Note
+
+This is pre-programmed to scan the `192.168.1.0/24` subnet. You can modify this subnet by accessing
+the `main.py` file and changing the subnet on line 5 to whatever you would like.
