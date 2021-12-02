@@ -19,6 +19,4 @@ def show_mac_vendor(s, r):
 
 if __name__ == "__main__":
     answers, _ = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=subnet), timeout=2, verbose=True, iface="Ethernet")
-    print(_, 'is unanswered')
-    print(answers, 'is answers')
     answers.summary(lambda s, r: show_mac_vendor(s, r))
